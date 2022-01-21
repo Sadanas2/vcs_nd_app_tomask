@@ -20,6 +20,8 @@ public final static String LOG_TAG= "log_main_activity";
         super.onCreate(savedInstanceState);
         printStatus("~~~~~~~~~~~");
         printStatus(": onCreate");
+        setupUI();
+
     }
 
     private void setupUI(){
