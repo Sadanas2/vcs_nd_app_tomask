@@ -17,9 +17,17 @@ public class SecondActivity extends AppCompatActivity {
     @Override
     protected  void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setupUI();
         printStatus("~~~~~~~~~~~");
         printStatus(": onCreate");
     }
+
+    private void setupUI(){
+        setContentView(R.layout.activity_main);
+        mainButton=findViewById(R.id.XXXX_activity_buttom);
+        onButtonClick();
+    }
+
     private void printStatus(String statusName){
         Log.i(LOG_TAG,"second activity: "+statusName);
     }
