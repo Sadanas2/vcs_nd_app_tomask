@@ -22,6 +22,13 @@ public final static String LOG_TAG= "log_main_activity";
         printStatus(": onCreate");
     }
 
+    private void setupUI(){
+        setContentView(R.layout.activity_main);
+        mainButton=findViewById(R.id.main_activity_buttom);
+        onButtonClick();
+
+    }
+
     private void printStatus(String statusName){
         Log.i(LOG_TAG,"first activity: "+statusName);
     }
@@ -36,8 +43,8 @@ public final static String LOG_TAG= "log_main_activity";
     }
 
     private void openSecondActivity() {
-        Intent secondAcrivity= new Intent(this, SecondActivity.class);
-        startActivity(secondAcrivity);
+        Intent secondActivity= new Intent(this, SecondActivity.class);
+        startActivity(secondActivity);
     }
 
 
