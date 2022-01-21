@@ -3,6 +3,8 @@ package lt.vcs.vcs_nd_app_tomask;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class SecondActivity extends AppCompatActivity {
 
     public final static String LOG_TAG= "log_second_activity";
+    Button mainButton;
 
     @Override
     protected  void onCreate(Bundle savedInstanceState) {
@@ -18,8 +21,18 @@ public class SecondActivity extends AppCompatActivity {
         printStatus(": onCreate");
     }
     private void printStatus(String statusName){
-        Log.i(LOG_TAG,"first activity: "+statusName);
+        Log.i(LOG_TAG,"second activity: "+statusName);
     }
+
+    private void onButtonClick(){
+        mainButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                finish();
+            }
+        });
+    }
+
 
     @Override
     protected void onStart(){

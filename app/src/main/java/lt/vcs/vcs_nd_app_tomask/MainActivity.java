@@ -28,7 +28,6 @@ public final static String LOG_TAG= "log_main_activity";
         setContentView(R.layout.activity_main);
         mainButton=findViewById(R.id.main_activity_buttom);
         onButtonClick();
-
     }
 
     private void printStatus(String statusName){
