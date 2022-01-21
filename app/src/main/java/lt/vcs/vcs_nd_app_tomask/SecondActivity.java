@@ -23,8 +23,8 @@ public class SecondActivity extends AppCompatActivity {
     }
 
     private void setupUI(){
-        setContentView(R.layout.activity_main);
-        mainButton=findViewById(R.id.XXXX_activity_buttom);
+        setContentView(R.layout.activity_second);
+        mainButton=findViewById(R.id.second_activity_buttom);
         onButtonClick();
     }
 
